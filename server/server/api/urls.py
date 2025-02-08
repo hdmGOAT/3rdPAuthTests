@@ -1,2 +1,6 @@
 from django.urls import path
-from profiles.urls import sync_clerk_user
+from profile.urls import urlpatterns as  profile_urls
+
+urlpatterns = [
+    path('', profile_urls)
+]
